@@ -5,10 +5,22 @@ html{
 
 .container{
    padding: 0 1.5rem; 
-   margin: auto;
+   margin: auto auto;
    
 }
 /* Navigation Section */
+nav{
+    
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 2rem auto;
+    
+    background-color: white;
+    width: 100%; 
+    
+}
 nav .container{
     height: 4rem;
     margin: 1rem auto;
@@ -62,17 +74,73 @@ nav ul li a:hover{
     color: #1FABD6;
 }
 
-
 .mobile-nav{
     display: none;
 }
+.space{
+    height: 2rem;
+    background-color: gray;
+    margin: 2rem;
+}
+/* Banner Section Styles */
+
+
+.banner .container{
+    background-color: grey;
+    margin: auto auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between
+    
+   
+}
+.banner .container img{
+    padding: 2rem auto;
+    width: 60%;
+}
+.banner .learn{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    margin-top: 5rem;
+    line-height: 3rem;
+    font-size: 3rem;
+    padding: 4rem;
+}
+.banner .learn button{
+    width: 100%;
+    background-color: black;
+    color: green;
+    padding: 1rem;
+    font-size: 1rem;
+    transition: all .3s ease-in-out 100ms;
+    font-weight: bold;
+}
+.learn button:hover{
+    background-color: white;
+    font-weight: bolder;
+    color: #1FABD6;
+    
+}
 
 /* Main Section Styles */
+
 .main .container{
-    margin: 2rem auto;
+    margin: auto auto;
+    display: block;
+    padding: 2rem; 
+    background-color: #6d2c2c;
+}
+.main img{
+    padding: 2rem auto;
+    width: 60%;
 }
 .main .container h2{
     margin: 2rem auto;
+    font-weight: bold;
+    font-size: 2rem;
 }
 .main .auth{
     margin: 1.5rem auto 2rem auto;
