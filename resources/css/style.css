@@ -66,14 +66,13 @@ nav ul li a{
     transition: all .3s ease 120ms;
 }
 nav ul li a:link{
-    color: #6D6565;
+    color: #000;
     text-decoration: none;
 }
 nav ul li a:hover{
     text-decoration: underline;
     color: #1FABD6;
 }
-
 .mobile-nav{
     display: none;
 }
@@ -85,7 +84,7 @@ nav ul li a:hover{
 /* Banner Section Styles */
 
 
-.banner .container{
+.container .banner{
     background-color: grey;
     margin: auto auto;
     padding: 2rem;
@@ -94,9 +93,9 @@ nav ul li a:hover{
     
    
 }
-.banner .container img{
+.container .banner img{
     padding: 2rem auto;
-    width: 60%;
+    width: 58%;
 }
 .banner .learn{
     display: flex;
@@ -111,11 +110,11 @@ nav ul li a:hover{
 }
 .banner .learn button{
     width: 100%;
-    background-color: black;
-    color: green;
+    background-color: rgb(128, 0, 32);
+    color: black;
     padding: 1rem;
     font-size: 1rem;
-    transition: all .3s ease-in-out 100ms;
+    transition: all .5s ease-in-out 100ms;
     font-weight: bold;
 }
 .learn button:hover{
@@ -126,24 +125,91 @@ nav ul li a:hover{
 }
 
 /* Main Section Styles */
-
-.main .container{
-    margin: auto auto;
-    display: block;
-    padding: 2rem; 
-    background-color: #6d2c2c;
+section#articles {
+    background-color: #C0BCBA;
 }
-.main img{
-    padding: 2rem auto;
+#articles .container {
+    display: flex;
+    padding: 2rem;
+    background-color: blue:
+  }
+  .featured {
     width: 60%;
-}
-.main .container h2{
-    margin: 2rem auto;
-    font-weight: bold;
+    flex: 0 1 auto;
+    margin-right: 1.5rem;
+  }
+  .featured .featured-copy h3 {
     font-size: 2rem;
-}
-.main .auth{
-    margin: 1.5rem auto 2rem auto;
+    font-weight: bold;
+  }
+  .featured .featured-copy .auth{
+      font-style: italic;
+      font-weight: bold;
+  }
+  .featured a:hover > .featured-copy > h3 {
+    border-bottom: 2px solid #333333;
+  }
+  .featured-copy {
+    width: 95%;
+  }
+  .featured img {
+    width: 100%;
+  }
+  .featured h3 {
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+  }
+  .featured p {
+    padding-top: 1.5rem;
+  }
+  .featured p:last-child {
+    padding: 2rem 0;
+    font-size: 0.85rem;
+  }
+  .article-list {
+    width: 40%;
+    margin-top: -1rem;
+    flex: 1 0 auto;
+  }
+  .article-block a {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all .5s ease 120ms;
+  }
+  .article-block a:hover{
+    background-color: rgba(128, 128, 128, 0.3);
+  }
+  
+  .article-block img {
+    width: 35%;
+    margin: 1rem;
+  }
+  
+  .article-copy {
+    max-width: 50%;
+    color: black;
+  }
+  .article-copy * {
+    padding: 5px 0;
+  }
+  .article-block a .article-copy .read-more {
+    color: #050404;
+    border-bottom: 1px solid transparent;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    transition: all .5s ease 120ms;
+  }
+  .article-block a:hover > .article-copy .read-more {
+    color: #1FABD6;
+    border-bottom: 1px solid #1FABD6;
+  }
+    
+.mobile-article-img{
+    display: none;
 }
 /* Courses Section */
 .courses .container h2{
