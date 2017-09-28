@@ -1,0 +1,112 @@
+/* Universal Styles */
+html{
+    font-size: 16px;
+}
+
+.container{
+   padding: 0 1.5rem; 
+   margin: auto;
+   
+}
+/* Navigation Section */
+nav .container{
+    height: 4rem;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between
+    
+
+}
+nav .logo p{
+
+}
+nav .logo span{
+    font-weight: bold;
+}
+
+nav .logo{
+    display: flex;
+    height: auto;
+    justify-content: flex-start;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: -.1rem;
+}
+nav .logo img{
+    height: auto;
+    width: 2.5rem;
+    
+}
+nav .desktop-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+nav ul li{
+    margin-right: 1rem;
+    font-size: 1.1rem;
+    transition: all 1s ease 200ms;
+}
+nav ul li a{
+    transition: all .3s ease 120ms;
+}
+nav ul li a:link{
+    color: #6D6565;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+    color: #1FABD6;
+}
+
+
+.mobile-nav{
+    display: none;
+}
+
+/* Main Section Styles */
+.main .container{
+    margin: 2rem auto;
+}
+.main .container h2{
+    margin: 2rem auto;
+}
+.main .auth{
+    margin: 1.5rem auto 2rem auto;
+}
+/* Courses Section */
+.courses .container h2{
+    margin: 2rem auto;
+    text-align: center
+}
+/* Thesis Section Styles */
+.thesis .container h2{
+    margin: 2rem auto;
+    text-align: center;
+}
+
+/* Footer Styles */
+footer{
+    border-top: 1px solid black;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem auto 2rem auto;
+}
+footer a{
+    display: inline-flex;
+    margin-left: 1rem;
+    transition: all .3s ease 120ms;
+}
+.foot-link{
+    color: #6D6565;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #1FABD6;
+    text-decoration: underline;
+}
