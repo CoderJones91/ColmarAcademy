@@ -8,34 +8,38 @@ html{
    margin: auto auto;
    
 }
-/* Navigation Section */
-nav{
+h3{
+    font-size: 2rem;
     
+}
+.container h3{
+    padding: 2rem;
+}
+@media only screen and (max-width: 954px) {
+    .container {
+      padding: 0 1rem;
+    }
+  }
+/* Navigation Section */
+nav{ 
     position: fixed;
     top: 0px;
     left: 0px;
     right: 0px;
-    padding: 2rem auto;
-    
+    padding: 2rem auto; 
     background-color: white;
-    width: 100%; 
-    
+    width: 100%;
 }
 nav .container{
     height: 4rem;
     margin: 1rem auto;
     display: flex;
     justify-content: space-between
-    
-
-}
-nav .logo p{
-
 }
 nav .logo span{
     font-weight: bold;
+    color: #1FABD6
 }
-
 nav .logo{
     display: flex;
     height: auto;
@@ -54,6 +58,7 @@ nav .desktop-nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #6D6565
     
 
 }
@@ -61,12 +66,13 @@ nav ul li{
     margin-right: 1rem;
     font-size: 1.1rem;
     transition: all 1s ease 200ms;
+    
 }
 nav ul li a{
     transition: all .3s ease 120ms;
 }
-nav ul li a:link{
-    color: #000;
+nav ul li a:link, a:visited{
+    color: #6D6565;
     text-decoration: none;
 }
 nav ul li a:hover{
@@ -81,11 +87,43 @@ nav ul li a:hover{
     background-color: gray;
     margin: 2rem;
 }
+@media only screen and (max-width: 775px) {
+    nav .logo a img  {
+      width: 2rem;
+    }
+  
+    nav .logo, p, ul.desktop-nav {
+      display: none;
+    }
+  
+    nav.container {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+    }
+  
+    nav .container .logo {
+      flex: 1 0 auto;
+    }
+  
+    .mobile-nav {
+      display: flex;
+      align-items: flex-end;
+      width: 50%;
+      justify-content: space-between;
+      flex: 1 0 auto;
+    }
+  
+    .mobile-nav li a img {
+      width: 2rem;
+    }
+  }
 /* Banner Section Styles */
 
 
 .container .banner{
-    background-color: grey;
+    background-color: #f7f7f7;
     margin: auto auto;
     padding: 2rem;
     display: flex;
@@ -123,10 +161,32 @@ nav ul li a:hover{
     color: #1FABD6;
     
 }
+.mobile-learn{
+    display: none;
+}
+@media only screen and (max-width: 775px){
+    .container .learn{
+        display: none;
+    }
+    .container .banner{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .container .banner img{
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+    .mobile-learn{
+        display: block;
+        color: #000;
+
+    }
+}
 
 /* Main Section Styles */
 section#articles {
-    background-color: #C0BCBA;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 #articles .container {
     display: flex;
@@ -141,6 +201,7 @@ section#articles {
   .featured .featured-copy h3 {
     font-size: 2rem;
     font-weight: bold;
+    padding: 1.5rem 0 0 0;
   }
   .featured .featured-copy .auth{
       font-style: italic;
@@ -165,7 +226,7 @@ section#articles {
   }
   .featured p:last-child {
     padding: 2rem 0;
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
   .article-list {
     width: 40%;
@@ -211,20 +272,164 @@ section#articles {
 .mobile-article-img{
     display: none;
 }
+
+@media only screen and (max-width: 954px) {
+    
+      #articles .container {
+        padding: 0;
+      }
+    
+      #articles .featured {
+        display: none;
+      }
+    
+      .article-list  {
+        margin-top: -2rem;
+      }
+    
+      .article-block:nth-child(2n + 0) {
+        margin: 2rem 0;
+      }
+    
+      .article-block a {
+        border: 0;
+        padding: 2rem;
+        margin-top: 2rem;
+        flex-flow: column;
+        align-items: flex-start;
+      }
+    
+      .desktop-article-img {
+        display: none;
+      }
+    
+      .mobile-article-img  {
+        display: block;
+      }
+    
+      .article-block img {
+        margin: 0;
+        width: 100%;
+      }
+    
+      .article-copy {
+        margin: 1rem 0 0 1rem;
+      }
+    }
+    
 /* Courses Section */
-.courses .container h2{
-    margin: 2rem auto;
-    text-align: center
-}
-/* Thesis Section Styles */
-.thesis .container h2{
-    margin: 2rem auto;
+#learning {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  
+  #learning h3 {
     text-align: center;
-}
+    margin-bottom: 1rem;
+  }
+  
+  .courses-grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0 3rem;
+  }
+  
+  .course-block {
+    margin: 1rem;
+    flex: 1 0 30.3333%;
+    background-color: white;
+  }
+  
+  .course-block a {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+  }
+  
+  .course-block a:hover {
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  .course-block img {
+    width: 100%;
+  }
+  
+  .course-block-copy {
+    padding: 1rem;
+  }
+  
+  .course-block-copy p span {
+    display: inline-block;
+    margin: 8px 0;
+  }
+  
+  @media only screen and (max-width: 775px) {
+    #learning img {
+      display: none;
+    }
+  
+    .courses-grid {
+      flex-flow: column wrap;
+      padding: 0;
+    }
+  
+    .course-block-copy p {
+      display: none;
+    }
+  
+    .course-block {
+      margin: .25rem 0rem;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+/* Thesis Section Styles */
+#thesis h3 {
+    text-align: center;
+    display: block;
+    margin-bottom: 2rem;
+  }
+  
+  #thesis .container {
+    
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  #thesis .containert{
+      display: flex;
+  }
+  
+  video {
+    width: 100%;
+  }
+  
+  @media only screen and (max-width: 954px) {
+    section#thesis  {
+      padding-bottom: 1.5rem;
+    }
+  
+    #thesis > h3 {
+      margin-bottom: 1rem;
+    }
+  
+    #thesis .article-list {
+      display: none;
+    }
+  
+    #thesis .featured {
+      width: 100%;
+      padding: 0;
+    }
+  
+    #thesis .featured-copy {
+      display: none;
+    }
+  }
+  
 
 /* Footer Styles */
 footer{
     border-top: 1px solid black;
+    
 }
 footer .container{
     display: flex;
@@ -243,4 +448,10 @@ footer a{
 footer a:hover{
     color: #1FABD6;
     text-decoration: underline;
+}
+@media only screen and (max-width: 775px) {
+.foot-link{
+    display: none;
+
+}
 }
