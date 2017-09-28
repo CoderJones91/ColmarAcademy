@@ -6,19 +6,47 @@ html{
 .container{
    padding: 0 1.5rem; 
    margin: auto auto;
+   max-width: 1440px;
    
 }
 h3{
     font-size: 2rem;
     
+    
+    
 }
 .container h3{
     padding: 2rem;
+    font-family: 'Germania One';
+    font-style: normal;
+    font-weight: 400;
 }
 @media only screen and (max-width: 954px) {
     .container {
       padding: 0 1rem;
     }
+  }
+/* Font Faces */
+@font-face {
+    font-family: 'Germania One';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Germania One'), local('GermaniaOne-Regular'), url(https://fonts.gstatic.com/s/germaniaone/v4/3_6AyUql_-FbDi1e68jHdBampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  }
+  @font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Oswald Regular'), local('Oswald-Regular'), url(https://fonts.gstatic.com/s/oswald/v14/_P8jt3Y65hJ9c4AzRE0V1OvvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  }
+  @font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Oswald Bold'), local('Oswald-Bold'), url(https://fonts.gstatic.com/s/oswald/v14/bH7276GfdCjMjApa_dkG6ZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
   }
 /* Navigation Section */
 nav{ 
@@ -39,6 +67,11 @@ nav .container{
 nav .logo span{
     font-weight: bold;
     color: #1FABD6
+}
+nav .logo p{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
 }
 nav .logo{
     display: flex;
@@ -66,6 +99,9 @@ nav ul li{
     margin-right: 1rem;
     font-size: 1.1rem;
     transition: all 1s ease 200ms;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
     
 }
 nav ul li a{
@@ -429,6 +465,9 @@ section#articles {
 /* Footer Styles */
 footer{
     border-top: 1px solid black;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
     
 }
 footer .container{
